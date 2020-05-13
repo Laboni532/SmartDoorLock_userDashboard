@@ -1,0 +1,89 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+#tableA, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  .row{
+    padding: 5px;
+  }
+  .info-style{
+    padding: 10px 25px 10px 25px;
+    background-color: azure;
+    border-radius: 15px;
+    margin: auto;
+  }
+
+  .icon-style{
+    font-size: 50px;
+    padding: 5px;
+  }
+
+  .sub-info-style{
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(188, 200, 200);
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+ 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(152, 172, 119, 0.74);
+    text-decoration-color: rgb(17, 15, 15);
+    text-align: center;
+ }
+  
